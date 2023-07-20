@@ -1,6 +1,7 @@
 # Arquivos gerados durante o desenvolvimento
 .yarn/
-
+.pnp.cjs
+.pnp.loader.mjs
 
 
 
