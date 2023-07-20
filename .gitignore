@@ -2,6 +2,8 @@
 .yarn/
 .pnp.cjs
 .pnp.loader.mjs
-
+*.ps1
+*.cmd
+node_modules/*
 
 
