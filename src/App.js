@@ -8,6 +8,7 @@ function App () {
         <Post title="Titulo 01" />
         <Post />
         <Post />
+        
     </>   
     );
 }
