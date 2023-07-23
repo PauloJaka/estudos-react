@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export default function Post(props) {
     return(
         <article>
-            <strong>dd</strong><br />
+            <strong>{props.title}</strong><br />
             <small>ddd</small>
             <br />
             Media:{props.likes/2}
@@ -14,4 +14,5 @@ export default function Post(props) {
 
 Post.propTypes = {
     likes: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
 };
