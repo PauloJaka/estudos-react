@@ -17,6 +17,7 @@ function App () {
 
         {post.map(post => (
             <Post
+            key = {post.title}
             likes={post.likes}
             post = {{
                 title: post.title,
@@ -24,8 +25,6 @@ function App () {
             }}
             />
         ))}
-
-
     </>   
     );
 }
