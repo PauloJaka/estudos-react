@@ -4,10 +4,9 @@ import PropTypes from "prop-types";
 export default function Post(props) {
     return(
         <article>
-            <strong>{props.title}</strong><br />
-            <small>ddd</small>
+            <strong>{props.post.title}</strong><br />
+            <small>{props.post.subtitle}</small>
             <br />
-            Media:{props.likes/2}
         </article>
     );
 }
