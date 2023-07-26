@@ -6,6 +6,7 @@ export default function Post(props) {
         <article>
             <strong>{props.post.title}</strong><br />
             <small>{props.post.subtitle}</small>
+            <p>{props.likes}</p>
             <br />
         </article>
     );
