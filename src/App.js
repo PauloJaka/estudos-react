@@ -3,16 +3,21 @@ import Post from "./Post";
 import { func } from "prop-types";
 
 const post = [
-    {title: "Title#01" , subtitle: "Sub#01", likes:10},
-    {title: "Title#02" , subtitle: "Sub#02", likes:20},
-    {title: "Title#03" , subtitle: "Sub#03", likes:50}
+    {id:Math.random() ,title: "Title#01" , subtitle: "Sub#01", likes:10},
+    {id:Math.random() ,title: "Title#02" , subtitle: "Sub#02", likes:20},
+    {id:Math.random() ,title: "Title#03" , subtitle: "Sub#03", likes:50}
 ]
 
 
 function App () {
 
     function handleRefresh(){
-        console.log('deucerto')
+        post.push({
+            id: Math.random(),
+            title: `Title#0${post.length + 1}`,
+            subtitle: `Sub#03`,
+            likes: 50,
+        });
     }
 
     return (
